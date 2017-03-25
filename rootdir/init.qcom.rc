@@ -25,6 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import init.omni.rc
 import init.qcom.usb.rc
 import init.target.rc
 
@@ -207,6 +208,14 @@ on boot
 
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
+
+    # Vibrator permissions
+    chown root system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0666 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
+    # Buttons
+    chown root system /proc/touchpanel/capacitive_keys_enable
+    chmod 0660 /proc/touchpanel/capacitive_keys_enable
 
 # msm specific files that need to be created on /data
 on post-fs-data
