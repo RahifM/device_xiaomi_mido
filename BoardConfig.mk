@@ -125,8 +125,8 @@ BOARD_USES_QCNE := true
 ENABLE_CPUSETS := true
 
 # Enable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := false
-TARGET_CRYPTFS_HW_PATH := $(DEVICE_PATH)/cryptfs_hw
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := $(LOCAL_PATH)/cryptfs_hw
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
@@ -193,6 +193,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
+TARGET_PROVIDES_POWERHAL := true
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
