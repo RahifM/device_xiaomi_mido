@@ -117,8 +117,9 @@ BOARD_USES_QCNE := true
 # Cpusets
 ENABLE_CPUSETS := true
 
-# Crypto
+# Enable HW based full disk encryption
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := $(DEVICE_PATH)/cryptfs_hw
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
@@ -212,6 +213,7 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+TARGET_PROVIDES_POWERHAL := true
 
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
