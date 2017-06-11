@@ -111,13 +111,6 @@ TARGET_CAM_REQ_LEAK_FIX := false
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(DEVICE_PATH)/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
-
 # CNE / DPM
 BOARD_USES_QCNE := true
 
@@ -159,6 +152,9 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
 TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+
+# DT2W Node
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
