@@ -27,3 +27,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="xiaomi/mido/mido:6.0.1/MMB29M/V8.2.4.0.MCFMIDL:user/release-keys" \
     PRIVATE_BUILD_DESC="mido-user 6.0.1 MMB29M V8.2.4.0.MCFMIDL release-keys"
+
+# CAF REVISION
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.caf.branch=LA.UM.5.5.r1-05100-8x96.0
+
+# Citrus-CAF Wt88047 Maintainer
+PRODUCT_BUILD_PROP_OVERRIDES += \
+         DEVICE_MAINTAINERS="Rahif ツ"
