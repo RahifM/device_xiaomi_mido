@@ -16,24 +16,11 @@
 -->
 <resources>
   <string name="app_name">Kenzo</string>
-  <string name="category_gestures_title">Gesture a schermo spento</string>
-  <string name="camera_title_head">Fotocamera</string>
-  <string name="camera_summary_head">Disegna un cerchio per attivare la fotocamera</string>
-  <string name="torch_title_head">Torcia</string>
-  <string name="torch_summary_head">Disegna una \"V\" per attivare la torcia</string>
   <string name="category_vibrator">Vibrazione</string>
   <string name="vib_strength_title_head">Intensità</string>
   <string name="vib_strength_summary_head">Definisci l\'intensità della vibrazione</string>
   <string name="vib_test">Prova</string>
   <string name="advanced_settings">Avanzate</string>
-  <string name="music_title_head">Musica</string>
-  <string name="music_summary_head">Disegna un II per riprodurre / mettere in pausa la musica e \u003C / \u003E per cambiare traccia</string>
-  <string name="category_slider">Cursore</string>
-  <string name="slider_mode_title">Modalità cursore</string>
-  <string name="slider_mode_zen">Non disturbare</string>
-  <string name="slider_mode_ringer">Modalità suoneria</string>
   <string name="buttons_title">Pulsanti</string>
   <string name="swap_back_recents_title">Scambia il pulsante indietro e recenti</string>
-  <string name="proxi_summary_head">Controlla il sensore di prossimità per eventuali gesture e il sensore di impronte digitali</string>
-  <string name="proxi_title_head">Controllo di prossimità</string>
 </resources>

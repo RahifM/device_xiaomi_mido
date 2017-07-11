@@ -33,25 +33,11 @@ import android.util.Log;
 public class DeviceSettings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener {
 
-    public static final String KEY_CAMERA_SWITCH = "camera";
-    public static final String KEY_TORCH_SWITCH = "torch";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
-    public static final String KEY_MUSIC_SWITCH = "music";
-    private static final String KEY_SLIDER_MODE = "slider_mode";
     private static final String KEY_SWAP_BACK_RECENTS = "swap_back_recents";
-    public static final String KEY_SRGB_SWITCH = "srgb";
-    public static final String KEY_HBM_SWITCH = "hbm";
-    public static final String KEY_PROXI_SWITCH = "proxi";
 
-    private TwoStatePreference mTorchSwitch;
-    private TwoStatePreference mCameraSwitch;
     private VibratorStrengthPreference mVibratorStrength;
-    private TwoStatePreference mMusicSwitch;
-    private ListPreference mSliderMode;
     private TwoStatePreference mSwapBackRecents;
-    private TwoStatePreference mSRGBModeSwitch;
-    private TwoStatePreference mHBMModeSwitch;
-    private TwoStatePreference mProxiSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,41 +46,14 @@ public class DeviceSettings extends PreferenceActivity implements
 
         addPreferencesFromResource(R.xml.main);
 
-        mTorchSwitch = (TwoStatePreference) findPreference(KEY_TORCH_SWITCH);
-        mTorchSwitch.setEnabled(TorchGestureSwitch.isSupported());
-        mTorchSwitch.setChecked(TorchGestureSwitch.isEnabled(this));
-        mTorchSwitch.setOnPreferenceChangeListener(new TorchGestureSwitch());
-
-        mCameraSwitch = (TwoStatePreference) findPreference(KEY_CAMERA_SWITCH);
-        mCameraSwitch.setEnabled(CameraGestureSwitch.isSupported());
-        mCameraSwitch.setChecked(CameraGestureSwitch.isEnabled(this));
-        mCameraSwitch.setOnPreferenceChangeListener(new CameraGestureSwitch());
-
         mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
         if (mVibratorStrength != null) {
             mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
         }
 
-        mMusicSwitch = (TwoStatePreference) findPreference(KEY_MUSIC_SWITCH);
-        mMusicSwitch.setEnabled(MusicGestureSwitch.isSupported());
-        mMusicSwitch.setChecked(MusicGestureSwitch.isEnabled(this));
-        mMusicSwitch.setOnPreferenceChangeListener(new MusicGestureSwitch());
-
-        mSliderMode = (ListPreference) findPreference(KEY_SLIDER_MODE);
-        mSliderMode.setOnPreferenceChangeListener(this);
-        int sliderMode = Settings.System.getInt(getContentResolver(),
-                    Settings.System.BUTTON_EXTRA_KEY_MAPPING, 0);
-        int valueIndex = mSliderMode.findIndexOfValue(String.valueOf(sliderMode));
-        mSliderMode.setValueIndex(valueIndex);
-        mSliderMode.setSummary(mSliderMode.getEntries()[valueIndex]);
-
         mSwapBackRecents = (TwoStatePreference) findPreference(KEY_SWAP_BACK_RECENTS);
         mSwapBackRecents.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.BUTTON_SWAP_BACK_RECENTS, 0) != 0);
-
-        mProxiSwitch = (TwoStatePreference) findPreference(KEY_PROXI_SWITCH);
-        mProxiSwitch.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.DEVICE_PROXI_CHECK_ENABLED, 1) != 0);
     }
 
     @Override
@@ -116,24 +75,11 @@ public class DeviceSettings extends PreferenceActivity implements
                     Settings.System.BUTTON_SWAP_BACK_RECENTS, mSwapBackRecents.isChecked() ? 1 : 0);
             return true;
         }
-        if (preference == mProxiSwitch) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.DEVICE_PROXI_CHECK_ENABLED, mProxiSwitch.isChecked() ? 1 : 0);
-            return true;
-        }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mSliderMode) {
-            String value = (String) newValue;
-            int sliderMode = Integer.valueOf(value);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.BUTTON_EXTRA_KEY_MAPPING, sliderMode);
-            int valueIndex = mSliderMode.findIndexOfValue(value);
-            mSliderMode.setSummary(mSliderMode.getEntries()[valueIndex]);
-        }
-        return true;
+            return false;
     }
 }
