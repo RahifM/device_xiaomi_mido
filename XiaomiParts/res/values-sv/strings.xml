@@ -16,16 +16,11 @@
 -->
 <resources>
   <string name="app_name">Kenzo</string>
-  <string name="camera_title_head">Kamera</string>
-  <string name="torch_title_head">Ficklampa</string>
-  <string name="torch_summary_head">Rita ett V för att växla ficklampa på/av</string>
   <string name="category_vibrator">Vibrator</string>
   <string name="vib_strength_title_head">Styrka</string>
   <string name="vib_strength_summary_head">Definiera styrkan på vibratorn</string>
   <string name="vib_test">Test</string>
   <string name="advanced_settings">Avancerad</string>
-  <string name="music_title_head">Musik</string>
-  <string name="slider_mode_zen">Stör ej</string>
   <string name="buttons_title">Knappar</string>
   <string name="swap_back_recents_title">Växla tillbaka och senaste-knappar</string>
 </resources>
