@@ -252,6 +252,16 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #    vendor.lineage.livedisplay@2.0-service.xiaomi_mido
 
+#ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+# Matlog
+PRODUCT_PACKAGES += \
+    MatLog
+
+# Custom priv-app permission
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+#endif
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
