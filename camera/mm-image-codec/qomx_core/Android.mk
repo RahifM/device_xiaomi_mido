@@ -12,7 +12,7 @@ LOCAL_CFLAGS := -Werror \
 
 LOCAL_C_INCLUDES := frameworks/native/include/media/openmax \
                     $(LOCAL_PATH)/../qexif \
-                    $(call project-path-for,qcom-media)/mm-core/inc
+                    hardware/qcom/media-caf-msm8937/mm-core/inc
 
 LOCAL_INC_FILES := qomx_core.h \
                    QOMX_JpegExtensions.h
