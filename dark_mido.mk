@@ -16,6 +16,8 @@
 
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit some common dark stuff!!
 $(call inherit-product, vendor/dark/common.mk)
 
