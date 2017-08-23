@@ -110,7 +110,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
+ BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
     device/xiaomi/mido/cmhw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
@@ -122,14 +122,7 @@ BOARD_USES_QCNE := true
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
-WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
+WITH_DEXPREOPT := true
 
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
