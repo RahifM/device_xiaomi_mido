@@ -1,0 +1,2 @@
+add_lunch_combo aosp_mido-eng
+add_lunch_combo aosp_mido-userdebug

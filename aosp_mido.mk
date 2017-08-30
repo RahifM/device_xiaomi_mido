@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
+# APNs
+PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-PRODUCT_NAME := lineage_mido
+PRODUCT_NAME := aosp_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
