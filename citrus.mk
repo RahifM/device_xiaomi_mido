@@ -30,8 +30,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # CAF REVISION
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.caf.branch=LA.UM.5.5.r1-05100-8x96.0
+    ro.caf.branch=LA.UM.5.6.r1-05700-89xx.0
 
-# Citrus-CAF Wt88047 Maintainer
+# Citrus-CAF Mido Maintainer
 PRODUCT_BUILD_PROP_OVERRIDES += \
          DEVICE_MAINTAINERS="Rahif ツ"
