@@ -17,6 +17,8 @@
 $(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
     LOCAL_KERNEL := device/xiaomi/mido/prebuilt/Image.gz-dtb
 else
