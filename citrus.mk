@@ -32,7 +32,7 @@ CITRUS_RELEASE := true
 
 # CAF REVISION
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.caf.branch=LA.UM.5.6.r1-05700-89xx.0
+    ro.caf.branch=LA.UM.5.6.r1-05900-89xx.0
 
 # Citrus-CAF Mido Maintainer
 PRODUCT_BUILD_PROP_OVERRIDES += \
