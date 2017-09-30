@@ -201,10 +201,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Off charging mode
-PRODUCT_PACKAGES += \
-    healthd_xiaomi
-
 # Power
 PRODUCT_PACKAGES += \
     power.msm8953
