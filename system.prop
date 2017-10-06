@@ -166,7 +166,6 @@ service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 persist.radio.aosp_usr_pref_sel=true
 
-
 # SdcardFs
 ro.sys.sdcardfs=true
 

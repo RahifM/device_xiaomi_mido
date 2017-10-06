@@ -14,20 +14,13 @@
 # limitations under the License.
 #
 
-# Grab em APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Bootanimation
-TARGET_BOOTANIMATION_SIZE := 1080p
-
 # Inherit some common stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-PRODUCT_NAME := omni_mido
+PRODUCT_NAME := du_mido
 BOARD_VENDOR := Xiaomi
-CARDINAL_RELEASE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
