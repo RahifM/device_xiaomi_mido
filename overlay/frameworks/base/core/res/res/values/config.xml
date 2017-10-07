@@ -106,7 +106,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-<!--    <integer name="config_deviceHardwareKeys">83</integer> -->
+    <integer name="config_deviceHardwareKeys">71</integer>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -215,9 +215,16 @@
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
-        <item>bnep\\d</item>
         <item>bt-pan</item>
     </string-array>
+
+    <!-- Max number of scan filters supported by blutooth controller. 0 if the
+         device does not support hardware scan filters-->
+    <integer translatable="false" name="config_bluetooth_max_scan_filters">1</integer>
+
+    <!-- Max number of advertisers supported by bluetooth controller. 0 if the
+         device does not support multiple advertisement-->
+    <integer translatable="false" name="config_bluetooth_max_advertisers">4</integer>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
@@ -361,6 +368,9 @@
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
+
+    <!-- Boolean indicating if current platform supports HFP inband ringing -->
+    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>    
 
     <!-- Operating volatage for bluetooth controller. 0 by default-->
     <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3300</integer>

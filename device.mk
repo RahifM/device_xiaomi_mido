@@ -171,6 +171,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf \
 
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # HIDL
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
@@ -186,6 +190,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/msm8953-snd-card-mtp_Button_Jack.kl:system/usr/keylayout/msm8953-snd-card-mtp_Button_Jack.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
+
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
 
 # IPA Manager
 #PRODUCT_PACKAGES += \
@@ -253,6 +261,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
+    init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
 
@@ -266,12 +275,12 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
-    rild_socket \
-    Stk
+    rild_socket 
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
+    $(LOCAL_PATH)/seccomp_policy/mediaextractor.policy:system/vendor/etc/seccomp_policy/mediaextractor.policy
 
 # Sensors
 PRODUCT_COPY_FILES += \
