@@ -1,1 +1,6 @@
 allow ims sysfs:file { open read };
+
+userdebug_or_eng(`
+  allow ims diag_device:chr_file rw_file_perms;
+')
+dontaudit ims diag_device:chr_file rw_file_perms;

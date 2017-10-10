@@ -1,2 +1,7 @@
 set_prop(netmgrd, vendor_xlat_prop)
 allow netmgrd sysfs:file read;
+
+userdebug_or_eng(`
+  allow netmgrd diag_device:chr_file rw_file_perms;
+')
+dontaudit netmgrd diag_device:chr_file rw_file_perms;
