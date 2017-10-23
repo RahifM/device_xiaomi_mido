@@ -274,8 +274,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.0-impl \
     librmnetctl \
     libcnefeatureconfig \
+    libprotobuf-cpp-full \
     libxml2 \
-    rild_socket 
+    rild_socket
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
