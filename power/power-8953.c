@@ -48,6 +48,8 @@
 #include "performance.h"
 #include "power-common.h"
 
+#define DOUBLE_TAP_FILE "/proc/touchpanel/double_tap_enable"
+
 static int saved_interactive_mode = -1;
 static int display_hint_sent;
 static int video_encode_hint_sent;
