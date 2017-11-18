@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 # ANT
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service
+    android.hardware.biometrics.fingerprint@2.1-service
 
 # FM
 PRODUCT_PACKAGES += \
@@ -196,8 +196,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/vendor/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/vendor/etc/xtwifi.conf
 
+# Hidl
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0-java
+
 # Health HAL
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.health@1.0-impl \
     android.hardware.health@1.0-convert \
     android.hardware.health@1.0-service \
