@@ -398,7 +398,4 @@
     <!-- Enable NightLight -->
     <bool name="config_nightDisplayAvailable">true</bool>
 
-    <!-- Wheter to enable doze always on -->
-    <bool name="config_enableDozeAlwaysOn">true</bool>
-
 </resources>
