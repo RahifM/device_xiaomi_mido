@@ -180,6 +180,7 @@ TARGET_PROVIDES_KEYMASTER := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8937
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -234,3 +235,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
+
+TARGET_USES_QCOM_BSP := true
