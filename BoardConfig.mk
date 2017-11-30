@@ -122,7 +122,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
     ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
+      WITH_DEXPREOPT := false
     endif
   endif
 endif
@@ -179,6 +179,7 @@ TARGET_PROVIDES_KEYMASTER := true
 # Lights
 BOARD_LIGHTS_VARIANT := aw2013
 TARGET_PROVIDES_LIBLIGHT := true
+WITH_CUSTOM_CHARGER := false
 
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \

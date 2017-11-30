@@ -50,7 +50,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
     if (!strcmp(vend, "searchf")) {
         is_goodix = false;
         mDevice = openHal();
-    } else if !strcmp(vend, "goodix")) {
+    } else if (!strcmp(vend, "goodix")) {
         is_goodix = true;
         mDevice = getWrapperService(BiometricsFingerprint::notify);
     }
