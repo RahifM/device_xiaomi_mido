@@ -122,7 +122,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
     ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := false
+      WITH_DEXPREOPT := true
     endif
   endif
 endif
@@ -180,13 +180,13 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
 TARGET_PROVIDES_KEYMASTER := true
 
 # Lights
-BOARD_LIGHTS_VARIANT := aw2013
-TARGET_PROVIDES_LIBLIGHT := true
+#BOARD_LIGHTS_VARIANT := aw2013
+#TARGET_PROVIDES_LIBLIGHT := true
 WITH_CUSTOM_CHARGER := false
 
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
-    $(DEVICE__PATH)/lineagehw
+    $(DEVICE_PATH)/lineagehw
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
