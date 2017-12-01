@@ -21,6 +21,7 @@ $(call inherit-product, vendor/cardinal/common.mk)
 
 PRODUCT_NAME := cardinal_mido
 BOARD_VENDOR := Xiaomi
+CARDINAL_RELEASE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
