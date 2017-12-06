@@ -252,3 +252,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
 
 TARGET_USES_QCOM_BSP := true
+ALLOW_MISSING_DEPENDENCIES := true
