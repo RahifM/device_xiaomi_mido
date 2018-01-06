@@ -118,6 +118,7 @@ ENABLE_CPUSETS := true
 
 # Enable HW based full disk encryption
 TARGET_HW_DISK_ENCRYPTION := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -185,10 +186,6 @@ TARGET_PROVIDES_KEYMASTER := true
 #BOARD_LIGHTS_VARIANT := aw2013
 TARGET_USES_LEGACY_LIBLIGHT := true
 WITH_CUSTOM_CHARGER := false
-
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/lineagehw
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
