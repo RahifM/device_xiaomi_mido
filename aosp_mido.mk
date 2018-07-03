@@ -16,8 +16,8 @@
 
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Inherit some common LineageOS stuff.
-#$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Grab em APNs
+PRODUCT_COPY_FILES += device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 PRODUCT_NAME := aosp_mido
 BOARD_VENDOR := Xiaomi
