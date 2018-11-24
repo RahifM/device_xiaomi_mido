@@ -49,3 +49,6 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
+
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
