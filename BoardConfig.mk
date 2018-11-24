@@ -46,6 +46,7 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
+TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -229,3 +230,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
     hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
     hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
+
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
