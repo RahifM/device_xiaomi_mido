@@ -395,3 +395,12 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Performance frameworks
+PRODUCT_PACKAGES += \
+    QPerformance \
+    UxPerformance
+
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
