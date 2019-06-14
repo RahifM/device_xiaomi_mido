@@ -379,6 +379,7 @@ on property:sys.boot_completed=1
 on property:init.svc.qcom-post-boot=stopped
     # Set min gpu freq as 320mhz
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 320000000
+    write /proc/sys/vm/swappiness 30
 
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
