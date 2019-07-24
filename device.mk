@@ -45,3 +45,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
+
+# Privileged permissions whitelist
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/permissions/privapp-permissions-mido.xml:system/etc/permissions/privapp-permissions-mido.xml
