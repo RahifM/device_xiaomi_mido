@@ -149,10 +149,9 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml
 
-# Device-specific settings
-# TODO: Bring this back with dirac ONLY !!
-#PRODUCT_PACKAGES += \
-#    XiaomiParts
+# Dirac is de wae!
+PRODUCT_PACKAGES += \
+    Dirac
 
 # DRM
 PRODUCT_PACKAGES += \
