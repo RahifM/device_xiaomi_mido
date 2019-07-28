@@ -151,8 +151,8 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 # TODO: Bring this back with dirac ONLY !!
-#PRODUCT_PACKAGES += \
-#    XiaomiParts
+PRODUCT_PACKAGES += \
+    Dirac
 
 # DRM
 PRODUCT_PACKAGES += \
