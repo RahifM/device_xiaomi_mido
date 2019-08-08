@@ -433,7 +433,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
-#PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
 
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_KERNEL_VERSION := 3.18
