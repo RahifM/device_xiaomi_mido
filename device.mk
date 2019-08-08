@@ -408,3 +408,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
