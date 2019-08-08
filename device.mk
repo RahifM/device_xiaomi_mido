@@ -424,3 +424,5 @@ PRODUCT_BOOT_JARS += \
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
+
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
