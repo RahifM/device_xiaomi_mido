@@ -259,17 +259,17 @@ vendor/lib64/librs_adreno_sha1.so|4ff782e5e2b20ef901f16830ef671e22a82ac030
 vendor/lib/libhdr_tm.so|17705b090e4e8b487a39071b2f46a45324d611a6
 vendor/lib64/libhdr_tm.so|a44d285a08aa30ef90e791c646b9c12a697a30b2
 
-# Graphics (Postprocessing) - from AquariusX2 (Zangya) PKQ1.190118.001/657
+# Graphics (Postprocessing) - from AquariusX2 Pro (Zangya Pro) PKQ1.190118.001/920
 vendor/bin/hw/vendor.display.color@1.0-service|e6dbb06d0d82ffe3328e7ddd259db02f80c1669e
 vendor/bin/mm-pp-dpps|f72a48703c0b9f5ab3ce176c12e8c769e20837a3
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib/libdisp-aba.so|75008ca9696ded106b6bf47e2968d8a8a9dcc897
-vendor/lib/vendor.display.color@1.0.so|f3acc62f826200030db8a565aeab4445c6fb53ef
+vendor/lib/vendor.display.color@1.0.so|5910d16429426831799379bef45a91fb73f1b96b
 vendor/lib64/libdisp-aba.so|09a8d5f64b3a6f6f57971ad6fab62cfde4e98547
-vendor/lib64/vendor.display.color@1.0.so|6093f6b3f654ea557ea297e695bc92a8fbae0c13
-vendor/lib64/vendor.display.color@1.1.so|d08173e23f648017e4226f88efe419e8931a64d6
-vendor/lib64/vendor.display.color@1.2.so|264433edda1e8e7fb8775a6427ace27be4a33e63
-vendor/lib64/vendor.display.postproc@1.0.so|44a60e215fc075f09973f033bacc89af2afe4164
+vendor/lib64/vendor.display.color@1.0.so|346620084ad60243985250d4082945e6b267c501
+vendor/lib64/vendor.display.color@1.1.so|8fda7c6969fa1ea2104c0c3ebb61f89bf3e22c7b
+vendor/lib64/vendor.display.color@1.2.so|796116f179007448a9fe71c63a18b29030322337
+vendor/lib64/vendor.display.postproc@1.0.so|c6e7afb4b638425e68ca7cecd0931369db506851
 
 # Graphics (SDM) - from op3 - PKQ1.181203.001
 vendor/lib/libscalar.so|cad128a6e71195b4ad38494bc0382bf80e1fb0b2
@@ -301,15 +301,7 @@ vendor/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
 vendor/lib/hw/keystore.msm8953.so|fdfa414efe6205bfd7750726ae730e4bd3c1ba00
 vendor/lib64/hw/keystore.msm8953.so|f71f1439c9c356ce05d88b876253b4e3dcb10f4b
 
-# Keymaster - from Bardock Pro
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so|9d855636cd20177f6fdaa47a9a45260330ed901b
-lib64/libsoftkeymasterdevice.so:vendor/lib64/libsoftkeymasterdevice-v27.so|2095d5c1c1600c9f1c714b102b4dccef00109fe1
-lib64/libkeymaster_messages.so:vendor/lib64/libkeymaster_messages-v27.so|4a37f2a5f1f208348c93243a58f0eaea457268e3
-lib64/libkeymaster_portable.so:vendor/lib64/libkeymaster_portable-v27.so|32771663c29fa4b8de3086f7c18eddd8dd586c17
-lib64/libkeymaster_staging.so:vendor/lib64/libkeymaster_staging-v27.so|62ae7af0ad77a3de31111a64da24c2329785e3d4
-lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster-v27.so|5704b8420586613635def323ca2c28a0f6ded59a
-
-# Listen - from Tissot PKQ1.180917.001.V10.0.11.0.PDHMIXM
+# Listen - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 vendor/lib/hw/sound_trigger.primary.msm8953.so|0e716aae6fe6fc4a8b9553953765f64614647e7d
 vendor/lib/libadpcmdec.so|eeaef8dd6cad3da613860bb263f192cda56c60b6
 vendor/lib/libsmwrapper.so|58dcf09adcbe6c851417e1569a120ac2e5e64a9d
