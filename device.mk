@@ -430,7 +430,7 @@ PRODUCT_PACKAGES += \
     Contacts \
     ChromeModernPublic \
     DeskClock \
-    LatinIME \
+    LatinIMEGooglePrebuilt \
     messaging \
     ParanoidPapers \
     RetroMusicPlayer \
