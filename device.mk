@@ -426,3 +426,7 @@ PRODUCT_HOST_PACKAGES += \
     signapk
 
 PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
+
+# Misc apps
+PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt
