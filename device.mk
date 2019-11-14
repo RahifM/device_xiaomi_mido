@@ -410,3 +410,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
+
+# Misc apps
+PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt
