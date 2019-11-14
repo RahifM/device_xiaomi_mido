@@ -439,3 +439,7 @@ PRODUCT_BOOT_JARS += \
     UxPerformance
 
 $(call inherit-product-if-exists, vendor/qcom/common/perf/perf-vendor.mk)
+
+# Misc apps
+PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt
