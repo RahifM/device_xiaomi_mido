@@ -122,10 +122,6 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     SnapdragonCamera2
 
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
-
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi_mido
