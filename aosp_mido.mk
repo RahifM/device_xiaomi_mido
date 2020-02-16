@@ -48,3 +48,7 @@ PRODUCT_COPY_FILES += \
 # Additional apps
 PRODUCT_PACKAGES += \
     MatLog
+
+# Privileged permissions whitelist
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
