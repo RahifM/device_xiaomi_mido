@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.msm8953 \
     libmm-qcamera \
-    SnapdragonCamera2
+    Snap
 
 # Consumerir
 PRODUCT_PACKAGES += \
