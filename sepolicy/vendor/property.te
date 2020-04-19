@@ -4,4 +4,5 @@ type vendor_camera_prop, property_type;
 # Dirac
 type dirac_prop, property_type;
 
+# Timekeep
 type vendor_timekeep_prop, property_type;
