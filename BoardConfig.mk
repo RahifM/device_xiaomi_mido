@@ -44,10 +44,12 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/rahif/android/kernels/toolchain/arm64-gcc/bin/aarch64-elf-
-CROSS_COMPILE_ARM32 := /home/rahif/android/kernels/toolchain/arm32-gcc/bin/arm-eabi-
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
-TARGET_COMPILE_WITH_MSM_KERNEL := true
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+ TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/rahif/android/kernels/toolchain/arm64-gcc/bin/aarch64-elf-
+ CROSS_COMPILE_ARM32 := /home/rahif/android/kernels/toolchain/arm32-gcc/bin/arm-eabi-
+ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
+ TARGET_COMPILE_WITH_MSM_KERNEL := true
+endif
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
