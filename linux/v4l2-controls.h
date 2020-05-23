@@ -1053,9 +1053,12 @@ enum vl42_mpeg_vidc_video_h264_svc_nal {
 		(V4L2_CID_MPEG_MSM_VIDC_BASE + 68)
 
 enum v4l2_mpeg_vidc_video_perf_mode {
+<<<<<<< HEAD
 #define V4L2_MPEG_VIDC_VIDEO_PERF_UNINIT \
 	V4L2_MPEG_VIDC_VIDEO_PERF_UNINIT
 	V4L2_MPEG_VIDC_VIDEO_PERF_UNINIT = 0,
+=======
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 	V4L2_MPEG_VIDC_VIDEO_PERF_MAX_QUALITY = 1,
 	V4L2_MPEG_VIDC_VIDEO_PERF_POWER_SAVE = 2
 };

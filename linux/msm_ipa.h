@@ -34,6 +34,14 @@
 #define IPA_DFLT_RT_TBL_NAME "ipa_dflt_rt"
 
 /**
+<<<<<<< HEAD
+=======
+ * name for default value of invalid protocol of NAT
+ */
+#define IPAHAL_NAT_INVALID_PROTOCOL   0xFF
+
+/**
+>>>>>>> ac30dd5... anc-10 mido kernel headers
  * commands supported by IPA driver
  */
 #define IPA_IOCTL_ADD_HDR                       0

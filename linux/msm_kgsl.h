@@ -64,6 +64,10 @@
 #define KGSL_CONTEXT_TYPE_CL		2
 #define KGSL_CONTEXT_TYPE_C2D		3
 #define KGSL_CONTEXT_TYPE_RS		4
+<<<<<<< HEAD
+=======
+#define KGSL_CONTEXT_TYPE_VK		5
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 #define KGSL_CONTEXT_TYPE_UNKNOWN	0x1E
 
 #define KGSL_CONTEXT_INVALIDATE_ON_FAULT 0x10000000

@@ -60,10 +60,14 @@ enum rmnet_ioctl_extended_cmds_e {
 	RMNET_IOCTL_SET_XLAT_DEV_INFO          = 0x0015,   /* xlat dev name   */
 	RMNET_IOCTL_DEREGISTER_DEV             = 0x0016,   /* Dereg a net dev */
 	RMNET_IOCTL_GET_SG_SUPPORT             = 0x0017,   /* Query sg support*/
+<<<<<<< HEAD
 	RMNET_IOCTL_SET_ETH_BRIDGE_EP          = 0x0018,   /* bridge ep mac */
 	RMNET_IOCTL_SET_DUMMY_NEIGH_MAC        = 0x0019,   /* dummy neigh mac */
 	RMNET_IOCTL_SET_RMNET_AS_ETH           = 0x001A,   /* vnd as eth */
 	RMNET_IOCTL_EXTENDED_MAX               = 0x001B
+=======
+	RMNET_IOCTL_EXTENDED_MAX               = 0x0018
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 };
 
 /* Return values for the RMNET_IOCTL_GET_SUPPORTED_FEATURES IOCTL */
@@ -96,10 +100,13 @@ enum rmnet_ioctl_extended_cmds_e {
 #define IFNAMSIZ 16
 #endif
 
+<<<<<<< HEAD
 #ifndef ETH_ALEN
 #define ETH_ALEN 6
 #endif
 
+=======
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 struct rmnet_ioctl_extended_s {
 	uint32_t   extended_ioctl;
 	union {
@@ -133,6 +140,7 @@ struct rmnet_ioctl_extended_s {
 			uint32_t agg_size;
 			uint32_t agg_count;
 		} ingress_format;
+<<<<<<< HEAD
 
 		struct {
 			unsigned char   mac_addr[ETH_ALEN];
@@ -146,6 +154,8 @@ struct rmnet_ioctl_extended_s {
 		} dummy_eth_neigh;
 
 		uint8_t enable_rmnet_as_ethernet;
+=======
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 	} u;
 };
 

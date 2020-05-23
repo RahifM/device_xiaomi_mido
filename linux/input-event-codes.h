@@ -274,6 +274,7 @@
 #define KEY_F23			193
 #define KEY_F24			194
 
+<<<<<<< HEAD
 #ifdef CONFIG_MACH_XIAOMI_TISSOT
 #define KEY_GESTURE_NAV_UP	195
 #define KEY_GESTURE_NAV_DOWN	196
@@ -281,6 +282,8 @@
 #define KEY_GESTURE_NAV_RIGHT	198
 #endif
 
+=======
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 #define KEY_PLAYCD		200
 #define KEY_PAUSECD		201
 #define KEY_PROG3		202

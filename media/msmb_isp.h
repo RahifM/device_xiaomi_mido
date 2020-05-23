@@ -24,7 +24,11 @@
 
 #define ISP_STATS_STREAM_BIT  0x80000000
 
+<<<<<<< HEAD
 #ifndef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifndef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 #define VFE_HW_LIMIT 1
 #endif
 
@@ -369,7 +373,11 @@ enum msm_vfe_axi_stream_cmd {
 	STOP_IMMEDIATELY,
 };
 
+<<<<<<< HEAD
 #ifndef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifndef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 enum msm_vfe_hw_state {
 	HW_STATE_NONE,
 	HW_STATE_SLEEP,
@@ -382,7 +390,11 @@ struct msm_vfe_axi_stream_cfg_cmd {
 	uint32_t stream_handle[VFE_AXI_SRC_MAX];
 	enum msm_vfe_axi_stream_cmd cmd;
 	uint8_t sync_frame_id_src;
+<<<<<<< HEAD
 #ifndef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifndef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 	enum msm_vfe_hw_state hw_state;
 #endif
 };
@@ -508,7 +520,11 @@ enum msm_vfe_reg_cfg_type {
 	VFE_HW_UPDATE_UNLOCK,
 	SET_WM_UB_SIZE,
 	SET_UB_POLICY,
+<<<<<<< HEAD
 #ifndef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifndef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 	GET_VFE_HW_LIMIT,
 #endif
 };
@@ -966,7 +982,11 @@ enum msm_isp_ioctl_cmd_code {
 	MSM_ISP_UNMAP_BUF,
 	MSM_ISP_FETCH_ENG_MULTI_PASS_START,
 	MSM_ISP_MAP_BUF_START_MULTI_PASS_FE,
+<<<<<<< HEAD
 #ifndef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifndef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 	MSM_ISP_CFG_HW_STATE,
 	MSM_ISP_AHB_CLK_CFG,
 #endif
@@ -1087,7 +1107,11 @@ enum msm_isp_ioctl_cmd_code {
 	_IOWR('V', MSM_ISP_UNMAP_BUF, \
 		struct msm_isp_unmap_buf_req)
 
+<<<<<<< HEAD
 #ifdef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifdef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 #define VIDIOC_MSM_ISP_AHB_CLK_CFG \
 	_IOWR('V', BASE_VIDIOC_PRIVATE+25, struct msm_isp_ahb_clk_cfg)
 #endif
@@ -1100,7 +1124,11 @@ enum msm_isp_ioctl_cmd_code {
 	_IOWR('V', MSM_ISP_MAP_BUF_START_MULTI_PASS_FE, \
 		struct msm_vfe_fetch_eng_multi_pass_start)
 
+<<<<<<< HEAD
 #ifndef CONFIG_MACH_XIAOMI_MIDO
+=======
+#ifndef CONFIG_MACH_XIAOMI_C6
+>>>>>>> ac30dd5... anc-10 mido kernel headers
 #define VIDIOC_MSM_ISP_CFG_HW_STATE \
 	_IOWR('V', MSM_ISP_CFG_HW_STATE, \
 		struct msm_vfe_axi_stream_cfg_cmd)
