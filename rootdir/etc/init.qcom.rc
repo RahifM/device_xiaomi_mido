@@ -190,9 +190,6 @@ on post-fs-data
     mkdir /dev/socket/location 0770 gps gps
     mkdir /dev/socket/location/ehub 0770 gps gps
 
-    # Create /data/vendor/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
-
     mkdir /data/vendor/audio/ 0770 media audio
 
     # Create a folder for audio delta files
