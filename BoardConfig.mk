@@ -77,6 +77,7 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8953
@@ -127,6 +128,7 @@ TARGET_USES_OVERLAY := true
 
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
 
 # UI
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS :=  0x2000
@@ -165,6 +167,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -221,3 +224,9 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
+
+# Declare soong namespace
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
+    hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
+    hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
