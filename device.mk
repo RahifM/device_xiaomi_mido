@@ -371,6 +371,11 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #   vendor.lineage.trust@1.0-service
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
