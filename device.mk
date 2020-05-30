@@ -34,7 +34,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/qcom/display-caf-msm8996 \
+    hardware/qcom/audio-caf-msm8996 \
+    hardware/qcom/media-caf-msm8996
 
 # Permissions
 PRODUCT_COPY_FILES += \
