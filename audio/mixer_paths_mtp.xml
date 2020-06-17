@@ -1143,7 +1143,7 @@
     <path name="handset">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="88" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
     </path>
@@ -1165,6 +1165,14 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
+    </path>
+
+    <path name="hph-highquality-mode">
+        <ctl name="RX HPH Mode" value="HD2" />
+    </path>
+
+    <path name="hph-lowpower-mode">
+        <ctl name="RX HPH Mode" value="CLS_H_LOHIFI" />
     </path>
 
     <path name="headset-mic">
@@ -1267,6 +1275,9 @@
     <path name="bt-sco-mic">
     </path>
 
+    <path name="bt-sco-headset-wb">
+    </path>
+
     <path name="speaker-and-bt-sco">
          <path name="speaker" />
          <path name="bt-sco-headset" />
@@ -1275,9 +1286,6 @@
     <path name="speaker-and-bt-sco-wb">
          <path name="speaker" />
          <path name="bt-sco-headset-wb" />
-    </path>
-
-    <path name="bt-sco-headset-wb">
     </path>
 
     <path name="bt-sco-mic-wb">
