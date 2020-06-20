@@ -154,9 +154,9 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml
 
-# Device-specific settings
-#PRODUCT_PACKAGES += \
-#    XiaomiDoze
+# Dirac is de wae!
+PRODUCT_PACKAGES += \
+    Dirac
 
 # DRM
 PRODUCT_PACKAGES += \
