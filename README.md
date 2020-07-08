@@ -1,23 +1,30 @@
-# Device Tree for Xiaomi Redmi Note 4 & 4x (Mido)
+# device/xiaomi/mido (AOSP device config for Xiaomi Redmi Note 4X)
 
-## Spec Sheet
+# How to build and flash aosp_mido zip?
 
-| Feature                 | Specification                     |
-| :---------------------- | :-------------------------------- |
-| CPU                     | Octa-core 2.0 GHz Cortex-A53      |
-| Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
-| GPU                     | Adreno 506                        |
-| Memory                  | 2/3/4 GB                          |
-| Shipped Android Version | 6.0.1                             |
-| Storage                 | 32/64 GB                          |
-| MicroSD                 | Up to 256 GB                      |
-| Battery                 | 4100 mAh (non-removable)          |
-| Dimensions              | 151 x 76 x 8.5 mm                 |
-| Display                 | 1920x1080 pixels, 5.5 (~401 PPI)  |
-| Rear Camera             | 13 MP, LED flash                  |
-| Front Camera            | 5 MP                              |
-| Release Date            | January 2017                      |
+* Download source and build AOSP images for Redmi Note 4X (Mido) -->
 
-## Device Picture
+```
+mkdir aosp
+cd aosp
+repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r40
+repo sync -j$nproc
+source build/envsetup.sh
+lunch aosp_mido-userdebug
+make -j$nproc
+```
 
-![Redmi Note 4](http://i01.appmifile.com/webfile/globalimg/7/537557F3-A4F1-2490-E9D3-138B2A11DBF6.png "Redmi Note 4")
+# How to flash and boot AOSP zip -->
+
+```
+boot to recovery
+wipe the usual drill
+flash the zip package
+reboot
+```
+
+# ToDo -->
+
+* Ril (call, messaging etc)
+* Camera and camcorder
+* find more broken stuff and fix
