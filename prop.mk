@@ -73,7 +73,6 @@ debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 debug.sf.disable_backpressure=1 \
-debug.sf.enable_gl_backpressure=1 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
@@ -111,7 +110,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.media.codec2=2 \
 debug.stagefright.omx_default_rank.sw-audio=1 \
 debug.stagefright.omx_default_rank=0 \
 media.msm8956hw=0 \
@@ -196,7 +194,3 @@ wifi.interface=wlan0
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.wfd.virtual=0
-
-# Zygote preforking
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.device_config.runtime_native.usap_pool_enabled=true
