@@ -428,3 +428,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Misc apps
+PRODUCT_PACKAGES += \
+    Abstruct \
+    Calendar \
+    Contacts \
+    ChromeModernPublic \
+    DeskClock \
+    messaging \
+    ParanoidPapers \
+    RetroMusicPlayer \
+    SnapdragonGallery
