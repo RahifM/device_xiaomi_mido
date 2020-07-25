@@ -32,7 +32,6 @@
         -->
         <!--<component>com.example.componentA</component>-->
         <!--<component>com.example.componentB</component>-->
-        <component>com.android.internal.telephony.ServiceStateTracker</component>
         <component>com.android.internal.telephony.SubscriptionController</component>
         <component>com.android.internal.telephony.SubscriptionInfoUpdater</component>
         <component>com.android.internal.telephony.GsmCdmaPhone</component>
