@@ -73,7 +73,6 @@ debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 debug.sf.disable_backpressure=1 \
-debug.sf.enable_gl_backpressure=1 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
@@ -111,7 +110,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.media.codec2=2 \
 debug.stagefright.omx_default_rank.sw-audio=1 \
 debug.stagefright.omx_default_rank=0 \
 media.msm8956hw=0 \
@@ -168,13 +166,13 @@ persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.hw_mbn_update=0 \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
-persist.vendor.radio.aosp_usr_pref_sel=true \
 ril.subscription.types=NV,RUIM \
-rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,22 \
-service.qti.ims.enabled=1
+ro.telephony.use_old_mnc_mcc_format=true \
+service.qti.ims.enabled=1 \
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
