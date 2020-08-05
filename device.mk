@@ -427,3 +427,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Boostfw #TODO: Unify/ add this into tree itself
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
+$(call inherit-product-if-exists, vendor/qcom/common/perf/perf-vendor.mk)
