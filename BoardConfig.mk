@@ -106,7 +106,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_USES_QCNE := true
 
 # Crypto
-#TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := true
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
