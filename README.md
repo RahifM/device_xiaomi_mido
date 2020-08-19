@@ -1,20 +1,21 @@
-# device/xiaomi/mido (AOSP device config for Xiaomi Redmi Note 4X)
+# device/xiaomi/mido (AOSP-CAF device config for Xiaomi Redmi Note 4X)
 
 # How to build and flash aosp_mido zip?
 
-* Download source and build AOSP images for Redmi Note 4X (Mido) -->
+* Download source and build AOSP-CAF for Redmi Note 4X (Mido) -->
 
 ```
-mkdir aosp
-cd aosp
-repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r40
-repo sync -j$nproc
+mkdir aospcaf
+cd aospcaf
+repo init -u https://github.com/AOSP-whatever/platform_manifest -b caf/LA.UM.8.6.r1
+git clone https://github.com/RahifM/local_manifests -b caf/LA.UM.8.6.r1 .repo/local_manifests
+repo sync -f -j8 --force-sync -q -c --no-clone-bundle --no-tags
 source build/envsetup.sh
 lunch aosp_mido-userdebug
-make -j$nproc
+make -j$nproc otapackage
 ```
 
-# How to flash and boot AOSP zip -->
+* How to flash and boot AOSP-CAF zip -->
 
 ```
 boot to recovery
@@ -23,8 +24,9 @@ flash the zip package
 reboot
 ```
 
-# ToDo -->
+* ToDo -->
 
-* Ril (call, messaging etc)
-* Camera and camcorder
-* find more broken stuff and fix
+```
+camcorder broke af
+find moar broke shit
+```
