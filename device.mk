@@ -1,4 +1,4 @@
-#
+l#
 # Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -438,3 +438,7 @@ PRODUCT_BOOT_JARS += \
     UxPerformance
 
 $(call inherit-product-if-exists, vendor/qcom/common/perf/perf-vendor.mk)
+
+# misc
+PRODUCT_PACKAGES += \
+    messaging
