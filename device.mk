@@ -309,8 +309,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.target.rc \
-    ueventd.qcom.rc \
-    move_wifi_data.sh
+    ueventd.qcom.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -395,20 +394,10 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
-    vendor.qti.hardware.wifi@1.0 \
-    vendor.qti.hardware.wifi.hostapd@1.1 \
-    vendor.qti.hardware.wifi.supplicant@2.0
-
-PRODUCT_PACKAGES += \
-    dhcpcd.conf \
-    hostapd \
-    libqmiservices_shim \
     libcld80211 \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
-    libwifi-hal-qcom \
     libwpa_client \
-    wificond \
+    hostapd \
+    libwifi-hal-qcom \
     wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
