@@ -14,9 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_mido.mk
-
-COMMON_LUNCH_CHOICES := \
-    du_mido-user \
-    du_mido-userdebug \
-    du_mido-eng
+    $(LOCAL_DIR)/du.mk
