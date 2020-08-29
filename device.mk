@@ -439,7 +439,3 @@ PRODUCT_BOOT_JARS += \
     UxPerformance
 
 $(call inherit-product-if-exists, vendor/qcom/common/perf/perf-vendor.mk)
-
-# misc
-PRODUCT_PACKAGES += \
-    messaging
