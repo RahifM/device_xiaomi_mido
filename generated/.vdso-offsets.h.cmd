@@ -1,0 +1,1 @@
+cmd_include/generated/vdso-offsets.h := 	/usr/bin/ccache /home/rahif/android/pa/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin/aarch64-elf-nm arch/arm64/kernel/vdso/vdso.so.dbg | /home/rahif/android/pa/kernel/xiaomi/msm8953/arch/arm64/kernel/vdso/gen_vdso_offsets.sh | LC_ALL=C sort > include/generated/vdso-offsets.h
