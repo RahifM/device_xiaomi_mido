@@ -43,4 +43,5 @@
     <integer name="config_deviceHardwareKeys">19</integer>
 
     <integer name="config_doubleTapOnHomeBehaviorHwkeys">5</integer>
+    <integer name="config_longPressOnAppSwitchBehaviorHwkeys">6</integer>
 </resources>
