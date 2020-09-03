@@ -425,13 +425,6 @@ PRODUCT_BOOT_JARS += \
 
 # Misc apps
 PRODUCT_PACKAGES += \
-    Abstruct \
-    Calendar \
     Contacts \
-    ChromeModernPublic \
-    DeskClock \
     LatinIMEGooglePrebuilt \
-    messaging \
-    ParanoidPapers \
-    RetroMusicPlayer \
-    SnapdragonGallery
+    ParanoidPapers
