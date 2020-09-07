@@ -36,7 +36,6 @@ cc_binary {
                 cflags: ["-DWAIT_FOR_QSEE"],
         },
     },
-    header_libs: ["generated_kernel_headers"],
     shared_libs: [
         "libbase",
         "libdl",

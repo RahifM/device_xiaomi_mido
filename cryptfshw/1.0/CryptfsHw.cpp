@@ -22,7 +22,7 @@
 #include <android-base/properties.h>
 #include <android-base/unique_fd.h>
 #include <dlfcn.h>
-#include <linux/qseecom.h>
+#include <qseecom.h>
 
 #include "Types.h"
 
