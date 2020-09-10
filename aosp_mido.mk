@@ -44,3 +44,6 @@ BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-
 # Boot Animation
 PRODUCT_COPY_FILES += \
     device/xiaomi/mido/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
