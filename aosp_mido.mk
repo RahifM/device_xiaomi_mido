@@ -24,7 +24,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Grab em APNs
 PRODUCT_COPY_FILES += device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-AOSP_BUILD_TYPE := FuckLove
+AOSP_BUILD_TYPE := FINALE
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
