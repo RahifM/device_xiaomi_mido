@@ -445,4 +445,5 @@ $(call inherit-product-if-exists, vendor/qcom/common/perf/perf-vendor.mk)
 
 # Misc apps
 PRODUCT_PACKAGES += \
-    LatinIMEGooglePrebuilt
+    LatinIMEGooglePrebuilt \
+    WallpaperPicker2
