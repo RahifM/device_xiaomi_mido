@@ -26,6 +26,7 @@ cc_defaults {
         "libcutils",
         "libdl",
         "libhidlbase",
+        "libhidltransport",
         "libutils",
         "vendor.lineage.livedisplay@2.0",
     ],
