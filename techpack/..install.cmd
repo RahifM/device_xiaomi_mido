@@ -1,0 +1,1 @@
+cmd_usr/techpack/.install := /bin/bash /home/raff2/du/kernel/xiaomi/mido/scripts/headers_install.sh ./usr/techpack /home/raff2/du/kernel/xiaomi/mido/techpack ; /bin/bash /home/raff2/du/kernel/xiaomi/mido/scripts/headers_install.sh ./usr/techpack ./techpack ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > ./usr/techpack/$$F; done; touch usr/techpack/.install
