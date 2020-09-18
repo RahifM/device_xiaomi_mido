@@ -413,4 +413,5 @@ PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
 
 # Misc apps
 PRODUCT_PACKAGES += \
-    LatinIMEGooglePrebuilt
+    LatinIMEGooglePrebuilt \
+    WallpaperPicker2
