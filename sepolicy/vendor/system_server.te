@@ -1,2 +1,7 @@
 # vibrator
 allow system_server sysfs_vibrator:file read;
+
+allow system_server kernel:system syslog_read;
+userdebug_or_eng(`
+  auditallow system_server kernel:system syslog_read;
+')
