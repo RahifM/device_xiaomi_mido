@@ -98,3 +98,7 @@ patchelf --add-needed libui_shim.so  "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamer
 
 # IMS GraphicBuffer shim
 patchelf --add-needed libvt_shim.so "${DEVICE_BLOB_ROOT}"/product/lib64/lib-imsvideocodec.so
+
+# Protobuf (sdk29)
+patchelf --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so "${DEVICE_BLOB_ROOT}"/vendor/lib64/libwvhidl.so
+patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so "${DEVICE_BLOB_ROOT}"/vendor/lib64/libsettings.so
