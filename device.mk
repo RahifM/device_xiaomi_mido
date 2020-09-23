@@ -418,3 +418,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Signapk
+PRODUCT_HOST_PACKAGES += \
+    signapk
