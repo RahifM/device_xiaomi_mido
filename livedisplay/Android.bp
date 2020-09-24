@@ -1,5 +1,4 @@
-//
-// Copyright (C) 2017-2018 The LineageOS Project
+// Copyright (C) 2020 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,18 +12,28 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_binary {
-    name: "android.hardware.ir@1.0-service.xiaomi_mido",
-    relative_install_path: "hw",
+cc_defaults {
+    name: "livedisplay_mido_defaults",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.ir@1.0-service.xiaomi_mido.rc"],
-    srcs: ["service.cpp", "ConsumerIr.cpp"],
+    relative_install_path: "hw",
+    srcs: [
+        "PictureAdjustment.cpp",
+        "service.cpp",
+    ],
     shared_libs: [
         "libbase",
-        "libhardware",
+        "libbinder",
+        "libcutils",
+        "libdl",
         "libhidlbase",
         "libutils",
-        "android.hardware.ir@1.0",
+        "vendor.lineage.livedisplay@2.0",
     ],
-    proprietary: true,
+}
+
+cc_binary {
+    name: "vendor.lineage.livedisplay@2.0-service.xiaomi_mido",
+    init_rc: ["vendor.lineage.livedisplay@2.0-service.xiaomi_mido.rc"],
+    defaults: ["livedisplay_mido_defaults"],
+    vendor: true,
 }
