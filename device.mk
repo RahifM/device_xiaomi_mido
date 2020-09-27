@@ -269,12 +269,12 @@ PRODUCT_PACKAGES += \
 
 #ifeq ($(TARGET_BUILD_VARIANT),userdebug)
 # Matlog
-PRODUCT_PACKAGES += \
-    MatLog
+#PRODUCT_PACKAGES += \
+ #   MatLog
 
 # Custom priv-app permission
-PRODUCT_COPY_FILES += \
-    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+#PRODUCT_COPY_FILES += \
+ #   device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 #endif
 
 # Media
