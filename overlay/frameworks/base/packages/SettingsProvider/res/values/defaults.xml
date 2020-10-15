@@ -21,7 +21,10 @@
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
 
-    <!-- Disable bluetooth by default -->
-    <bool name="def_bluetooth_on">false</bool>
+    <!-- Enable bluetooth by default -->
+    <bool name="def_bluetooth_on">true</bool>
+
+    <!-- Enable wifi by default -->
+    <bool name="def_wifi_on">true</bool>
 
 </resources>
