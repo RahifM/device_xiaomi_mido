@@ -428,6 +428,5 @@ PRODUCT_BOOT_JARS += \
 
 # Misc apps
 PRODUCT_PACKAGES += \
-    Contacts \
     LatinIMEGooglePrebuilt \
     ParanoidPapers
