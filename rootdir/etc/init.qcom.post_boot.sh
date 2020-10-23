@@ -343,10 +343,24 @@ function configure_zram_parameters() {
     # For >=2GB Non-Go devices, size = 50% of RAM size. Limit the size to 4GB.
     # And enable lz4 zram compression for Go targets.
 
+<<<<<<< HEAD
     RamSizeGB=`echo "($MemTotal / 1048576 ) + 1" | bc`
     zRamSizeBytes=`echo "$RamSizeGB * 1024 * 1024 * 1024 / 2" | bc`
     if [ $RamSizeGB -gt 4 ]; then
         zRamSizeBytes=4294967296
+=======
+    let RamSizeGB="( $MemTotal / 1048576 ) + 1"
+    diskSizeUnit=M
+    if [ $RamSizeGB -le 2 ]; then
+        let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
+    else
+        let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
+    fi
+
+    # use MB avoid 32 bit overflow
+    if [ $zRamSizeMB -gt 4096 ]; then
+        let zRamSizeMB=4096
+>>>>>>> f0b87753... mido: post_boot: use 'MB' as default unit for zram disksize setting.
     fi
 
     if [ "$low_ram" == "true" ]; then
@@ -357,6 +371,7 @@ function configure_zram_parameters() {
         if [ -f /sys/block/zram0/use_dedup ]; then
             echo 1 > /sys/block/zram0/use_dedup
         fi
+<<<<<<< HEAD
         if [ $MemTotal -le 524288 ]; then
             echo 402653184 > /sys/block/zram0/disksize
         elif [ $MemTotal -le 1048576 ]; then
@@ -364,6 +379,9 @@ function configure_zram_parameters() {
         else
             echo $zRamSizeBytes > /sys/block/zram0/disksize
         fi
+=======
+        echo "$zRamSizeMB""$diskSizeUnit" > /sys/block/zram0/disksize
+>>>>>>> f0b87753... mido: post_boot: use 'MB' as default unit for zram disksize setting.
 
         # ZRAM may use more memory than it saves if SLAB_STORE_USER
         # debug option is enabled.
