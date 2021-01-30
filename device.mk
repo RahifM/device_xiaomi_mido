@@ -330,6 +330,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# SystemUIGoogle package
+PRODUCT_PACKAGES += \
+    SystemUIGoogleOverlayHentai
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
