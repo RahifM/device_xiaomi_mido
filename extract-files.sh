@@ -92,3 +92,30 @@ done
 # Camera debug log file
 sed -i "s|persist.camera.debug.logfile|persist.vendor.camera.dbglog|g" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_dbg.so
 "${MY_DIR}/setup-makefiles.sh"
+<<<<<<< HEAD
+=======
+
+# Camera graphicbuffer shim
+patchelf --add-needed libui_shim.so  "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_ppeiscore.so
+
+# Camera VNDK support
+patchelf --remove-needed libandroid.so libmmcamera2_stats_modules.so
+patchelf --remove-needed libgui.so libmmcamera2_stats_modules.so
+sed -i "s|libandroid.so|libcamshim.so|g" libmmcamera2_stats_modules.so
+patchelf --remove-needed libgui.so libmmcamera_ppeiscore.so
+patchelf --remove-needed libandroid.so libmpbase.so
+
+# Goodix
+patchelf --remove-needed libunwind.so gx_fpd
+patchelf --remove-needed libbacktrace.so gx_fpd
+
+# Wcnss_service - libqmiservices_shim
+patchelf --add-needed "libqmiservices_shim.so" "${DEVICE_BLOB_ROOT}"/vendor/bin/wcnss_service
+sed -i "s|dms_get_service_object_internal_v01|dms_get_service_object_shimshim_v01|g" "${DEVICE_BLOB_ROOT}"/vendor/bin/wcnss_service
+
+# Wi-Fi Display
+patchelf --set-soname "libwfdaudioclient.so" libaudioclient.so "${DEVICE_BLOB_ROOT}"/libwfdaudioclient.so
+patchelf --set-soname "libwfdmediautils.so" libmediautils.so "${DEVICE_BLOB_ROOT}"/libwfdmediautils.so
+patchelf --add-needed "libwfdaudioclient.so" "${DEVICE_BLOB_ROOT}"/libwfdmmsink.so
+patchelf --add-needed "libwfdmediautils.so" "${DEVICE_BLOB_ROOT}"/libwfdmmsink.so
+>>>>>>> 5d64a06b... mido: goodix: drop libunwind & libbacktrace deps
