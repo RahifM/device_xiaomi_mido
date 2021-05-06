@@ -71,7 +71,6 @@ PRODUCT_COPY_FILES += \
 
 # Device Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
--include $(LOCAL_PATH)/product_prop.mk
 
 # ANT
 PRODUCT_PACKAGES += \
