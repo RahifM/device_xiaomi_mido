@@ -49,8 +49,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
-KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"

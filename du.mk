@@ -44,3 +44,11 @@ BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-
 ifeq ($(WITH_GMS),true)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 endif
+
+# Misc
+PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt \
+    MatLog
+
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/configs/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml

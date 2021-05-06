@@ -242,20 +242,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_mido
 
-# LiveDisplay
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.0-service-sdm
-
-#ifeq ($(TARGET_BUILD_VARIANT),userdebug)
-# Matlog
-PRODUCT_PACKAGES += \
-    MatLog
-
-# Custom priv-app permission
-PRODUCT_COPY_FILES += \
-    device/xiaomi/mido/configs/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
-#endif
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -331,9 +317,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-#PRODUCT_BOOT_JARS += \
-#    telephony-ext
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
@@ -360,14 +343,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
-
-# Touch features
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.touch@1.0-service.xiaomi_mido
-
-# Trust HAL
-#PRODUCT_PACKAGES += \
-#   vendor.lineage.trust@1.0-service
 
 # TimeKeep
 PRODUCT_PACKAGES += \
@@ -415,7 +390,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# misc
-PRODUCT_PACKAGES += \
-    LatinIMEGooglePrebuilt
