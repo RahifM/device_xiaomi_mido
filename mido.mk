@@ -54,6 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     LatinIMEGooglePrebuilt \
     Matlog \
+    Stk \
     WallpaperPicker2
 
 PRODUCT_COPY_FILES += \
