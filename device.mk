@@ -432,11 +432,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Misc apps
-PRODUCT_PACKAGES += \
-    LatinIMEGooglePrebuilt \
-    WallpaperPicker2
-
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
