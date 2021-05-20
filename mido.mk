@@ -59,3 +59,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+
+ifeq ($(WITH_GMS),true)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+endif
