@@ -54,9 +54,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     MatLog \
     Stk \
-    LatinIMEGooglePrebuilt \
     WallpaperPicker2
 
 
 PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+
+ifeq ($(WITH_GMS),true)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+endif
