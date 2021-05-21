@@ -54,13 +54,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     MatLog \
     Stk \
-    LatinIMEGooglePrebuilt \
-    WallpaperPicker2
-
+    LatinIMEGooglePrebuilt
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
-
-PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-sp/libcompiler_rt.so:vendor/lib/libcompiler_rt.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcompiler_rt.so:vendor/lib64/libcompiler_rt.so
