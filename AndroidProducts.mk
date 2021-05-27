@@ -14,9 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mido.mk
-
-COMMON_LUNCH_CHOICES := \
-    mido-user \
-    mido-userdebug \
-    mido-eng
+    $(LOCAL_DIR)/scorpion.mk

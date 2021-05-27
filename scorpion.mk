@@ -16,19 +16,21 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
 # Grab em APNs
-PRODUCT_COPY_FILES += device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+#PRODUCT_COPY_FILES += device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-AOSP_BUILD_TYPE := FINALE
+#AOSP_BUILD_TYPE := FINALE
+
+include vendor/scorpion/config/common.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := mido
+PRODUCT_NAME := scorpion_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
@@ -44,20 +46,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-keys"
 
 # Boot Animation
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/xiaomi/mido/prebuilt/bootanimation.zip:system/media/bootanimation.zip
 
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # Misc
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     MatLog \
     Stk \
     WallpaperPicker2
 
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
 ifeq ($(WITH_GMS),true)
