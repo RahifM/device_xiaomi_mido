@@ -44,13 +44,13 @@ ro.bluetooth.hfp.ver=1.7
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-camera.display.lmax=1280x720 \
-camera.display.umax=1920x1080 \
 camera.lowpower.record.enable=1 \
 media.camera.ts.monotonic=1 \
 persist.camera.gyro.disable=0 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
+persist.vendor.camera.display.lmax=1280x720 \
+persist.vendor.camera.display.umax=1920x1080 \
 persist.vendor.qti.telephony.vt_cam_interface=1 \
 vidc.enc.dcvs.extra-buff-count=2
 
@@ -66,7 +66,6 @@ persist.debug.coresight.config=stm-events
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
-debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
@@ -78,10 +77,8 @@ persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
-ro.qualcomm.cabl=0 \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 ro.vendor.display.cabl=2 \
-sdm.debug.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.gralloc.enable_fb_ubwc=1
