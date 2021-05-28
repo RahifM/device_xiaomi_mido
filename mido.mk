@@ -55,14 +55,11 @@ PRODUCT_PACKAGES += \
     MatLog \
     LatinIMEGooglePrebuilt \
     Stk \
-    WallpaperPicker2 \
-    NexusLauncherRelease
+    WallpaperPicker2
+
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml \
-    device/xiaomi/mido/privapp-permissions-com.google.android.apps.nexuslauncher.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml \
-    device/xiaomi/mido/com.android.launcher3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.launcher3.xml \
-    device/xiaomi/mido/com.google.android.apps.nexuslauncher.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.nexuslauncher.xml
+    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
 ifeq ($(WITH_GMS),true)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
