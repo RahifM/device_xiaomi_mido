@@ -57,7 +57,6 @@ PRODUCT_PACKAGES += \
     Stk \
     WallpaperPicker2
 
-
 PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
