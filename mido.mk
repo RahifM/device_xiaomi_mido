@@ -64,7 +64,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_OVERRIDE_INFO := true
 PRODUCT_OVERRIDE_FINGERPRINT := xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-keys
 PRODUCT_OVERRIDE_DESC := mido-user 7.0 NRD90M V9.6.1.0.NCFMIFD release-keys
-
-ifeq ($(WITH_GMS),true)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-endif

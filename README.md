@@ -1,14 +1,14 @@
 # device/xiaomi/mido (AOSP device config for Xiaomi Redmi Note 4X)
 
-# How to build and flash aosp mido zip?
+# How to build and flash proton aosp mido zip?
 
-* Download source and build AOSP for Redmi Note 4X (Mido) -->
+* Download source and build Proton AOSP for Redmi Note 4X (Mido) -->
 
 ```
-mkdir aosp
-cd aosp
-repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r37
-git clone https://github.com/RahifM/local_manifests -b android-11.0.0 .repo/local_manifests
+mkdir proton
+cd proton
+repo init -u https://github.com/ProtonAOSP/android_manifest -b rvc
+git clone https://github.com/RahifM/local_manifests -b staging/proton-rvc .repo/local_manifests
 repo sync -j8 --force-sync --no-clone-bundle --no-tags
 source build/envsetup.sh
 lunch mido-userdebug
