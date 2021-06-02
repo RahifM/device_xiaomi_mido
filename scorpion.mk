@@ -55,9 +55,9 @@ BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-
 # Misc
 #PRODUCT_PACKAGES += \
     MatLog \
+    LatinIMEGooglePrebuilt \
     Stk \
     WallpaperPicker2
-
 
 #PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
