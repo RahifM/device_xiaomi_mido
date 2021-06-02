@@ -38,10 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/qcom/display-caf-msm8996 \
-    hardware/qcom/audio-caf-msm8996 \
-    hardware/qcom/media-caf-msm8996
+    $(LOCAL_PATH)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -434,3 +431,5 @@ PRODUCT_HOST_PACKAGES += \
     signapk
 
 #PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
+
+TARGET_BOARD_PLATFORM := msm8953
