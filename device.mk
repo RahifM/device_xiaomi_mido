@@ -17,13 +17,13 @@
 $(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-#ifeq ($(TARGET_PREBUILT_KERNEL),)
- #   LOCAL_KERNEL := device/xiaomi/mido/prebuilt/Image.gz-dtb
-#else
- #   LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-#endif
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    LOCAL_KERNEL := device/xiaomi/mido/prebuilt/Image.gz-dtb
+else
+    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
 
-#PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -433,3 +433,4 @@ PRODUCT_HOST_PACKAGES += \
 #PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
 
 TARGET_BOARD_PLATFORM := msm8953
+TARGET_KERNEL_VERSION := 3.18
