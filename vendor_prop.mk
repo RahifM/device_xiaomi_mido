@@ -191,3 +191,6 @@ wifi.interface=wlan0
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.wfd.virtual=0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
