@@ -434,3 +434,10 @@ PRODUCT_HOST_PACKAGES += \
 
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_KERNEL_VERSION := 3.18
+
+PRODUCT_PACKAGES += \
+   MatLog \
+
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+
