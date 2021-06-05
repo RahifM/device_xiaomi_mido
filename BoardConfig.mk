@@ -233,7 +233,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
 
-
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/xiaomi_vendor_framework_compatibility_matrix.xml
