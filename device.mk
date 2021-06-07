@@ -446,3 +446,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
+
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
