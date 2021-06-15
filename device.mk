@@ -426,10 +426,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Signapk
-PRODUCT_HOST_PACKAGES += \
-    signapk
-
 #PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/mido/kernel-headers
 
 PRODUCT_USES_QCOM_HARDWARE := true
