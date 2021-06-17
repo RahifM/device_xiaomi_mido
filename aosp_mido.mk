@@ -49,3 +49,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# Misc
+PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt \
+    Matlog \
+    WallpaperPicker2
+
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
