@@ -21,6 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
+$(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
+
 # Grab em APNs
 PRODUCT_COPY_FILES += device/xiaomi/mido/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
@@ -51,7 +53,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # Misc
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     MatLog \
     LatinIMEGooglePrebuilt \
     Stk \
