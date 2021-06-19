@@ -30,7 +30,7 @@ AOSP_BUILD_TYPE := FINALE
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := mido
+PRODUCT_NAME := hentai_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
@@ -53,11 +53,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # Misc
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     MatLog \
-    LatinIMEGooglePrebuilt \
-    Stk \
-    WallpaperPicker2
+    Stk
 
 PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml

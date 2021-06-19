@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mido.mk
+    $(LOCAL_DIR)/hentai_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    mido-user \
-    mido-userdebug \
-    mido-eng
+    hentai_mido-user \
+    hentai_mido-userdebug \
+    hentai_mido-eng
