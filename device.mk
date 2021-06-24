@@ -38,7 +38,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    packages/apps/Bluetooth
 
 # Permissions
 PRODUCT_COPY_FILES += \
