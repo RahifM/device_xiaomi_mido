@@ -16,7 +16,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
@@ -26,11 +26,11 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 
 #AOSP_BUILD_TYPE := FINALE
 
-include vendor/scorpion/config/common.mk
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := scorpion_mido
+PRODUCT_NAME := potato_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi

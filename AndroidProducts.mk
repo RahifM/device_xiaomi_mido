@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/scorpion.mk
+    $(LOCAL_DIR)/potato_mido.mk
+
+COMMON_LUNCH_CHOICES := \
+    potato_mido-user \
+    potato_mido-userdebug \
+    potato_mido-eng
