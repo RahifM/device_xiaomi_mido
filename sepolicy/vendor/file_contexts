@@ -50,6 +50,6 @@
 /(system/vendor|vendor)/bin/timekeep                    u:object_r:timekeep_exec:s0
 
 # USB HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.basic  u:object_r:hal_usb_default_exec:s0
+#/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.basic  u:object_r:hal_usb_default_exec:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti      u:object_r:hal_power_default_exec:s0
