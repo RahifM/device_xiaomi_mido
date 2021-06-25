@@ -53,13 +53,11 @@ BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # Misc
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     MatLog \
-    LatinIMEGooglePrebuilt \
-    Stk \
-    WallpaperPicker2
+    LatinIMEGooglePrebuilt
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     device/xiaomi/mido/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
 
 ifeq ($(WITH_GMS),true)
