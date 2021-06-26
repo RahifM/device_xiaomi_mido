@@ -61,6 +61,9 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
  TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 #endif
 
+KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
