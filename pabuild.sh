@@ -7,4 +7,4 @@
 export TARGET_DISABLES_GMS=true
 
 # Compile the build
-./rom-build.sh mido
+./rom-build.sh mido 2>&1 | tee "buildlog-$(date +'%m%d-%H%M').txt"
