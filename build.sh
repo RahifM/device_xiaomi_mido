@@ -4,4 +4,4 @@
 #export WITH_GMS=true
 
 # Compile the build
-. build/envsetup.sh && lunch mido-userdebug && make -j8 otapackage 2>&1 | tee buildlog.txt
+. bu*/env* && lunch hentai_mido-userdebug && make -j16 otapackage 2>&1 | tee "buildlog-$(date +'%m%d-%H%M').txt"
