@@ -37,4 +37,9 @@
         wifi,bt,sound,flashlight,rotation,battery,cell,airplane,cast,screenrecord,reboot,dark,dnd
     </string>
 
+    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <string name="quick_settings_tiles_stock" translatable="false">
+        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,nfc,location,hotspot,inversion,saver,dark,work,cast,night,screenrecord,reverse,caffeine,dc_dimming,heads_up,dataswitch,powershare,reboot,sound
+    </string>
+
 </resources>
